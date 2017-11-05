@@ -15,7 +15,7 @@ class UATTest extends TestCase
         factory(Task::class)->create(['name' => 'Task 3']);
 
         $this->visit('/')
-            ->see('Task 0')
+            ->see('Task 1')
             ->see('Task 2')
             ->see('Task 3');
     }
